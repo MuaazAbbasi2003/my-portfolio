@@ -13,7 +13,7 @@
 .section-container { 
     width: 100%;
     height: 750px;
-    background-image: url(..//images/vintage-camera-pencil-open-laptop-twig-isolated-white-background.jpg);
+    background-image: url(./vintage-camera-pencil-open-laptop-twig-isolated-white-background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,8 +22,8 @@
 .greeting-text {
     display: flex;
     color: rgb(136, 135, 135);
-    padding: 15px;
-    font-size: 25px;
+    padding: 18px;
+    font-size: 15px;
     border-radius: 8px;
     text-align: justify;
     max-width: 100%;
@@ -53,13 +53,14 @@
 }
 
 .name-text {
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #000000;
     font-family: sans-serif;
     width: 100%;
     opacity: 0;
     animation: slideIn 1.5s ease-out forwards;
+
 }
 
 
