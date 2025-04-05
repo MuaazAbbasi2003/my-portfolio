@@ -1,0 +1,84 @@
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+
+.section-container { 
+    width: 100%;
+    height: 750px;
+    background-image: url(..//images/vintage-camera-pencil-open-laptop-twig-isolated-white-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.greeting-text {
+    display: flex;
+    color: rgb(136, 135, 135);
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 8px;
+    text-align: justify;
+    max-width: 100%;
+    height: 60%;
+    font-style: italic;
+    font-family: sans-serif;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 1s;
+}
+
+#greeting-text1 {
+    align-items: center;
+}
+
+
+.intro-container {
+    text-align: left;
+    padding: 30px;
+    width: 100%;
+}
+
+
+.name-container {
+    align-items: left;
+    width: 100%;
+}
+
+.name-text {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000000;
+    font-family: sans-serif;
+    width: 100%;
+    opacity: 0;
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+
+.container-alpha {
+    width: 60%;
+    height: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.321);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.922);
+    transition: all 0.3s ease-in-out;
+}
+.container-alpha:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+

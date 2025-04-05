@@ -1,0 +1,104 @@
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.about-section {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 3rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  display: inline-block;
+  transform: scale(0.95);
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.about-section ul li {
+  margin: 0.5rem 0;
+  opacity: 0;
+  animation: fadeSlideUp 0.6s ease forwards;
+  animation-fill-mode: both;
+}
+
+.about-section ul li:nth-child(1) { animation-delay: 0.5s; }
+.about-section ul li:nth-child(2) { animation-delay: 0.6s; }
+.about-section ul li:nth-child(3) { animation-delay: 0.7s; }
+
+.about-section a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.about-section a:hover {
+  color: #fffbfb;
+  background-color: #000000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+}
+
+.about-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+}
+
+.about-images img {
+  width: 150px;
+  height: auto;
+  border: 2px solid #010101;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.about-images img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
